@@ -6,7 +6,7 @@ Created on Sun Jun  3 16:04:27 2018
 """
 '''
 import os
-os.chdir('C:\\Users\\Lenovo\\Desktop\\ML\\preProcessingPackage')
+os.chdir('C:\\Users\\Lenovo\\Desktop\\ML\\preProcessingPackage\\kapph')
 '''
 
 
@@ -16,7 +16,7 @@ pp = preProcessing()
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv("Data.csv")
+data = pd.read_csv("data files\\Data.csv")
 
 pp = preProcessing()
 
@@ -37,3 +37,4 @@ print(pp.removeNull(data))
 X,y = pp.dataArray(data = data,yName = "Purchased")
 
 Xt,Xte,yt,yte = pp.splitter(X,y,0.2)
+
