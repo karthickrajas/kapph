@@ -51,9 +51,9 @@ class preProcessing(object):
         numCol = list(data.select_dtypes(include = ['float64','int64']).columns)
         columndetails = []
         for i in objCol:
-            columndetails.append({'Column Name':i,'Type' : 'Object' ,'Number of NULL values': float(data[i].isna().sum())})
+            columndetails.append({'Column Name':i,'Type' : 'Object' ,'Number of NULL values': float(data[i].isnull().sum())})
         for i in numCol:
-            columndetails.append({'Column Name':i,'Type' : 'Numeric' ,'Number of NULL values': float(data[i].isna().sum())})
+            columndetails.append({'Column Name':i,'Type' : 'Numeric' ,'Number of NULL values': float(data[i].isnull().sum())})
         return(pd.DataFrame(columndetails))
         
         
@@ -77,6 +77,7 @@ class preProcessing(object):
     def binning(self,data,col,valueList,labelNames):
         data[col] = pd.cut(data[col],valueList,labels = labelNames)
         data[col] = data[col].astype('object')
+        return data
         
         
         

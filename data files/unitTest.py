@@ -24,7 +24,7 @@ pp.convertToObj(data,[1,2])
 
 pp.convertToNum(data,[2])
 
-pp.bucket(data,'Age',[0,18,35,50],["young","medium","old"])
+pp.binning(data,'Age',[0,18,35,50],["young","medium","old"])
 
 print(pp.removeNull(data))
 
