@@ -51,13 +51,13 @@ class preProcessing(object):
         numCol = list(data.select_dtypes(include = ['float64','int64']).columns)
         columndetails = []
         for i in objCol:
-            columndetails.append({'Column Name':i,'Type' : 'Object' ,'Number of NULL values': float(data[i].isnull().sum())})
+            columndetails.append({'Column Name':i,'Type' : 'Object' ,'Number of NULL values': float(data[i].isna().sum())})
         for i in numCol:
-            columndetails.append({'Column Name':i,'Type' : 'Numeric' ,'Number of NULL values': float(data[i].isnull().sum())})
+            columndetails.append({'Column Name':i,'Type' : 'Numeric' ,'Number of NULL values': float(data[i].isna().sum())})
         return(pd.DataFrame(columndetails))
         
         
-        
+    @timeit    
     def convertToObj(self,data,colToCon="all"):
         if colToCon == "all":
             for col in data.columns:
