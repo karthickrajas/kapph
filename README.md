@@ -18,6 +18,8 @@ Features to be added yet.
 
 **Usage**
 ```
+from kapph.kapph import preProcessing
+pp = preProcessing()
 pp.printCols(data)
 ```
 **Output**
