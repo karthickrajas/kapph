@@ -1,5 +1,13 @@
 # Kapph
 
+## Installation
+
+```
+conda install git pip
+pip install git+https://github.com/karthickrajas/kapph.git
+```
+
+
 ## Description
 This package is being built for applying pre processing functionality for datasets.
 
