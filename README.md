@@ -9,14 +9,14 @@ Print the list of columns with the datatype and the number of missing values in 
 Features to be added yet.
 
 **Usage**
-'''
+```
 pp.printCols(data)
-'''
+```
 **Output**
-'''
+```
   Column Name  Number of NA values     Type
 0     Country                    0.0   Object
 1   Purchased                    0.0   Object
 2         Age                    1.0  Numeric
 3      Salary                    1.0  Numeric
-'''
+```
