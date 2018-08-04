@@ -22,6 +22,9 @@ def timeit(method):
 
 class preProcessing(object):
     
+    def demo_print():
+        print("Hi user..")
+    
     import matplotlib.pyplot as plt
     import pandas as pd
     import numpy as np

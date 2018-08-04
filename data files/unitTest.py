@@ -33,3 +33,4 @@ X,y = pp.dataArray(data = data,yName = "Purchased")
 Xt,Xte,yt,yte = pp.splitter(X,y,0.2)
 
 
+from kapph.kapph import res
