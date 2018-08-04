@@ -8,7 +8,7 @@ Created on Mon Jul  2 12:59:11 2018
 from setuptools import setup
 
 setup(name='KAPPH',
-      version='0.1',
+      version='0.101',
       description='Tool for Pre-Processing',
       url='http://github.com/karthickrajas/kapph',
       author='Karthick Raja',
